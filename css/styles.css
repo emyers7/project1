@@ -1,0 +1,39 @@
+/* Mobile-first styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #0051ff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #0051ff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
