@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8"> <!-- "utf-8" is now lowercase -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up for Our Beta</title>
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/styles.css">
-  <script src="../js/script.js" async></script>
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS path fixed -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- CSS path fixed -->
+  <script src="js/script.js" async></script> <!-- Fixed JS path -->
 </head>
 <body>
   <header>
@@ -14,7 +14,7 @@
     <p>Sign up to be a part of our software's exclusive testing team and help us make it great.</p>
   </header>
   <main>
-    <form id="signup-form" method="GET" action="thank-you.html">
+    <form id="signup-form" method="GET" action="thank-you.html" autocomplete="on"> <!-- Autocomplete attribute now added -->
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
       
@@ -23,12 +23,12 @@
       
       <label for="password">Password:</label>
       <input type="password" id="password" name="password" required>
-
-      <ul>
+      
+      <!-- Changed <ul> to <div> as instructed from basecamp feedback -->
+      <div>
         <button type="submit">Sign Up</button>
         <a href="thank-you.html">Thank you</a>
-      </ul>
-      
+      </div>
     </form>
   </main>
 </body>
