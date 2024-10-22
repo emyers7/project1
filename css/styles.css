@@ -1,14 +1,14 @@
 /* Mobile-first styles */
 body {
-  font-family: 'Roboto', sans-serif; /* Added imported font */
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Added purple-blue background */
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4b0082, #008080); /* Added purple and blue background */
   color: #333;
   padding: 10px;
 }
-/* fixed Spacing issues */
+
 header h1 {
   font-size: 1.5rem;
-  color: #ffffff; /* Changed color to stand out from the background */
+  color: #0051ff;
 }
 
 form {
@@ -16,21 +16,19 @@ form {
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
 }
 
 label {
   margin: 10px 0 5px;
+  color: white; /* Label text set to white */
 }
 
 input {
   padding: 10px;
   font-size: 1rem;
   border-radius: 4px;
-  margin-bottom: 15px; /* Added margin to vertically align input boxes */
-  width: 90%; /* Made inputs touch-friendly on mobile */
+  outline: 2px solid #0051ff; /* Added outline to input fields */
+  border: none;
 }
 
 button {
@@ -39,16 +37,8 @@ button {
   color: white;
   font-size: 1rem;
   border-radius: 4px;
+  margin-top: 15px;
   cursor: pointer;
-  width: 90%;
-}
-
-a {
-  text-decoration: none;
-  color: #0051ff;
-  margin-top: 10px;
-  text-align: center;
-  display: inline-block;
 }
 
 /* Larger screens */
@@ -60,15 +50,27 @@ a {
   header h1 {
     font-size: 2rem;
   }
-
-  form {
-    max-width: 500px; /* Expanded form size for larger screens */
-  }
 }
 
 @media (min-width: 1024px) {
   form {
     max-width: 600px;
+  }
+
+  /* Styles specific for thank you page */
+  .thank-you {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .thank-you h1 {
+    font-size: 2rem;
+    color: #0051ff;
+  }
+
+  .thank-you p {
+    font-size: 1.2rem;
+    color: #333;
   }
 
   header h1 {
